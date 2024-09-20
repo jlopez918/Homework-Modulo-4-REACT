@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "Rick and Morty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../public/ram.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: #191c29;
+  background-image: url("../public/rambg2.jpg");
+}
+
+.title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.character {
+  border-radius: 10px;
+}
+
+.title {
+  justify-content: center;
+  align-items: center;
+  font-family: "Rick and Morty";
+  text-align: center;
+  color: greenyellow;
+  font-size: 10px;
+  width: 160px;
+}
+
+.detail {
+  font-family: "Rick and Morty";
+  text-align: center;
+  font-size: 22px;
+  color: rgba(41, 202, 162, 0.87);
+}
+
+.tituloTop {
+  justify-content: center;
+  align-items: center;
+  font-family: "Rick and Morty";
+  text-align: center;
+  color: rgba(41, 202, 162, 0.87);
+}
+
+#form {
+  font-family: "Rick and Morty";
+  color: #58837d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error {
+  color: red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form p {
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.form button {
+  margin: 5px;
+  background-color: #58837d;
+  font-family: "Rick and Morty";
+  color: greenyellow;
+  width: 200px;
+  height: 80px;
+  font-size: 30px;
+}
+
+.a-box {
+  width: 240px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.img-container {
+  height: 230px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+  display: inline-block;
+}
+
+.img-container img {
+  transform: skew(0deg, -13deg);
+  height: 250px;
+  margin: -35px 0px 0px -70px;
+}
+
+.inner-skew {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0px;
+  transform: skew(0deg, 13deg);
+  font-size: 0px;
+  margin: 30px 0px 0px 0px;
+  background: #c8c2c2;
+  height: 250px;
+  width: 200px;
+}
+
+.text-container {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #58837d;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+/*.cards-rows {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+} */
+
+/* .card-contenedor {
+  display: grid;
+  gap: 50px;
+  grid-auto-rows: 50px; */
+/* flex-direction: row; */
+/*flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  width: 100%;  
+}*/
+
+/* #root {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-height: 800px;
+  align-items: center;
+  gap: 20px;
+} */
+
+.cardbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pagination {
+  color: greenyellow;
+  font-family: "Rick and Morty";
+  align-items: center;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+.pagination button {
+  background-color: #58837d;
+  padding: 20px;
+  font-size: 20px;
+  margin: 30px;
+}
+
+.episodesContainer {
+  /* display: flex; */
+  color: aquamarine;
+  /* flex-direction: row; */
+  width: 240px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  flex-direction: column;
+  background-color: #58837d;
+  border-radius: 10px;
+}
+
+.episodetitle {
+  color: greenyellow;
+  font-family: "Rick and Morty";
+  font-size: 20px;
+}
+
+.episode {
+  text-align: center;
+  font-weight: 200;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  background-color: black;
+}
+
+.date {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.episodebox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  height: 80px;
+  list-style: none;
+  font-family: "Rick and Morty";
+  color: greenyellow;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.navbarcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  color: red;
+  font-size: 35px;
+}
+
+.homecontent {
+  font-family: "Rick and Morty";
+  color: #58837d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homecontent h3 {
+  font-size: 35px;
+  color: greenyellow;
+}
+
+.homecontent a {
+  font-size: 22px;
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 20px;
+  margin: 10px;
+}
